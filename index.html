@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Никита — сайты, боты, Mini App</title>
+  <meta name="description" content="Никита: сайты, Telegram-боты и Mini App под ключ. Делаю, показываю реальные проекты, называю цены и сроки.">
+
+  <!-- [ЗАПОЛНИТЬ: canonical и og:url/twitter:url после публикации на GitHub
+       Pages — раздел 6 ТЗ допускает canonical, «если домен известен»; пока
+       неизвестен, теги ниже не абсолютные и без rel=canonical] -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Никита — сайты, боты, Mini App">
+  <meta property="og:description" content="Сайты, Telegram-боты и Mini App для владельцев малого бизнеса. Реальные проекты, цены и сроки — без воды.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Никита — сайты, боты, Mini App">
+  <meta name="twitter:description" content="Сайты, Telegram-боты и Mini App для владельцев малого бизнеса. Реальные проекты, цены и сроки — без воды.">
+  <meta name="twitter:image" content="assets/img/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Никита",
+    "jobTitle": "Веб-разработчик",
+    "description": "Делаю сайты, Telegram-ботов и Mini App.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Екатеринбург",
+      "addressCountry": "RU"
+    },
+    "sameAs": [
+      "https://t.me/nkt_ptv",
+      "https://max.ru/u/f9LHodD0cOKA0Cs35rlldL-TaPL7G7kwwVheM39CTGdGCqtrY4F3NoeKjZA"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div class="texture" aria-hidden="true">
+    <div class="texture__fog texture__fog--one"></div>
+    <div class="texture__fog texture__fog--two"></div>
+    <div class="texture__grain"></div>
+    <div class="texture__vignette"></div>
+  </div>
+
+  <header class="site-header">
+    <span class="brand" aria-hidden="true">Н.</span>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="#projects">Проекты</a></li>
+        <li><a class="site-nav__link" href="#about">Обо мне</a></li>
+        <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="hero" class="section section--hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-bg__rain" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero__text">
+          <h1 id="hero-heading">Никита. Сайты, боты, Mini App.</h1>
+          <p class="hero__stats">12+ проектов · 3 клиента · 2 года в коде</p>
+          <p class="hero__lead">
+            Делаю сайты, Telegram-ботов и Mini App для владельцев малого бизнеса —
+            без долгих согласований и лишних слов.
+          </p>
+          <a
+            class="button button--telegram js-telegram-cta"
+            href="https://t.me/nkt_ptv"
+            data-message="Здравствуйте, Никита! Хочу обсудить проект"
+            target="_blank"
+            rel="noopener"
+          >Написать в Telegram</a>
+        </div>
+
+        <div class="code-window" aria-hidden="true">
+          <div class="code-window__tabs">
+            <span class="code-window__tab is-active" data-filename="bot.py">bot.py</span>
+            <span class="code-window__tab" data-filename="cart.js">cart.js</span>
+            <span class="code-window__tab" data-filename="catalog.js">catalog.js</span>
+            <span class="code-window__tab" data-filename="scene.js">scene.js</span>
+          </div>
+          <div class="code-window__viewport">
+            <div class="code-window__lines">
+              <div class="code-window__line"><span class="code-window__lineno">1</span><span class="code-window__code"><span class="tok tok--comment"># Обработчик команды /start</span></span></div>
+              <div class="code-window__line"><span class="code-window__lineno">2</span><span class="code-window__code"><span class="tok tok--keyword">from</span> aiogram <span class="tok tok--keyword">import</span> Bot, Dispatcher, types</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">3</span><span class="code-window__code"><span class="tok tok--keyword">from</span> aiogram.filters <span class="tok tok--keyword">import</span> Command</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">4</span><span class="code-window__code"><span class="tok tok--keyword">from</span> aiogram.utils.keyboard <span class="tok tok--keyword">import</span> InlineKeyboardBuilder</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">5</span><span class="code-window__code"></span></div>
+              <div class="code-window__line"><span class="code-window__lineno">6</span><span class="code-window__code">dp = Dispatcher()</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">7</span><span class="code-window__code"></span></div>
+              <div class="code-window__line"><span class="code-window__lineno">8</span><span class="code-window__code">@dp.message(Command(<span class="tok tok--string">"start"</span>))</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">9</span><span class="code-window__code"><span class="tok tok--keyword">async</span> <span class="tok tok--keyword">def</span> cmd_start(message: types.Message) -&gt; <span class="tok tok--keyword">None</span>:</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">10</span><span class="code-window__code"><span class="tok tok--comment">    # Кнопка со ссылкой на оплату подписки</span></span></div>
+              <div class="code-window__line"><span class="code-window__lineno">11</span><span class="code-window__code">    keyboard = InlineKeyboardBuilder()</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">12</span><span class="code-window__code">    keyboard.button(</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">13</span><span class="code-window__code">        text=<span class="tok tok--string">"Оформить подписку"</span>,</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">14</span><span class="code-window__code">        url=<span class="tok tok--string">"https://example.com/subscribe"</span>,</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">15</span><span class="code-window__code">    )</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">16</span><span class="code-window__code">    <span class="tok tok--keyword">await</span> message.answer(</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">17</span><span class="code-window__code">        <span class="tok tok--string">"Привет! Это закрытый канал."</span>,</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">18</span><span class="code-window__code">        reply_markup=keyboard.as_markup(),</span></div>
+              <div class="code-window__line"><span class="code-window__lineno">19</span><span class="code-window__code">    )</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <p class="section-number" aria-hidden="true">01 / Проекты</p>
+      <h2 id="projects-heading">Проекты</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-card__media">
+            <img
+              src="assets/img/projects/sida-candle.webp"
+              alt="Скриншот главной страницы сайта SiDa Candle"
+              width="800"
+              height="500"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="badge">Интернет-магазин</span>
+              <span class="badge badge--status">Реальный проект</span>
+            </div>
+            <h3 class="project-card__title">SiDa Candle</h3>
+            <p class="project-card__stack">HTML, CSS, JS</p>
+            <p class="project-card__desc">
+              Каталог свечей и декора ручной работы: галерея фото, выбор
+              аромата, оформление заказа в Telegram и MAX.
+            </p>
+            <a class="project-card__link" href="http://sidacandle.ru/" target="_blank" rel="noopener">
+              Открыть сайт →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <img
+              src="assets/img/projects/bmw-m5-g90.webp"
+              alt="Скриншот 3D-витрины автомобиля BMW M5 G90"
+              width="1280"
+              height="720"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="badge">3D-витрина</span>
+              <span class="badge badge--status">Реальный проект</span>
+            </div>
+            <h3 class="project-card__title">BMW M5 G90</h3>
+            <p class="project-card__stack">Three.js, GSAP, HTML/CSS/JS</p>
+            <p class="project-card__desc">
+              Интерактивная 3D-витрина автомобиля: модель с управлением
+              камерой и раздел с характеристиками.
+            </p>
+            <a class="project-card__link" href="https://anarabdullaevtwitch.netlify.app/" target="_blank" rel="noopener">
+              Открыть сайт →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <img
+              src="assets/img/projects/lumos-coffee.webp"
+              alt="Скриншот главной страницы сайта кофейни Lumos"
+              width="800"
+              height="500"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="badge">Лендинг</span>
+              <span class="badge badge--status">Концепт</span>
+            </div>
+            <h3 class="project-card__title">Lumos</h3>
+            <p class="project-card__stack">HTML, CSS, JS</p>
+            <p class="project-card__desc">
+              Сайт кофейни с меню напитков, разделом выбора своего «факультета»
+              по вкусу и страницей «О нас».
+            </p>
+            <a class="project-card__link" href="https://skorb210878-byte.github.io/Lumus.Coffee/" target="_blank" rel="noopener noreferrer">
+              Открыть сайт →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <p class="section-number" aria-hidden="true">02 / Что делаю</p>
+      <h2 id="services-heading">Что делаю</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Сайт-визитка / лендинг</h3>
+          <p>Одна страница, которая объясняет, что вы делаете, показывает
+            работы и ведёт в Telegram.</p>
+          <dl class="service-card__facts">
+            <div><dt>Срок</dt><dd>2-3 дня</dd></div>
+            <div><dt>Цена</dt><dd>от 5 000 ₽</dd></div>
+          </dl>
+          <div class="service-card__cta">
+            <a
+              class="service-card__select js-telegram-cta"
+              href="https://t.me/nkt_ptv"
+              data-message="Здравствуйте, Никита! Хочу заказать: сайт-визитку / лендинг"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Выбрать: сайт-визитка / лендинг, написать в Telegram"
+            >Выбрать</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3>Витрина с заказом в Telegram</h3>
+          <p>Каталог товаров или услуг с оформлением заказа прямо в Telegram,
+            без отдельной CRM.</p>
+          <dl class="service-card__facts">
+            <div><dt>Срок</dt><dd>3-5 дней</dd></div>
+            <div><dt>Цена</dt><dd>от 8 000 ₽</dd></div>
+          </dl>
+          <div class="service-card__cta">
+            <a
+              class="service-card__select js-telegram-cta"
+              href="https://t.me/nkt_ptv"
+              data-message="Здравствуйте, Никита! Хочу заказать: витрину с заказом в Telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Выбрать: витрина с заказом в Telegram, написать в Telegram"
+            >Выбрать</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3>Telegram-бот</h3>
+          <p>Приём заявок, ответы на частые вопросы, оплата и уведомления —
+            то, что раньше делали вручную.</p>
+          <dl class="service-card__facts">
+            <div><dt>Срок</dt><dd>2-3 дня</dd></div>
+            <div><dt>Цена</dt><dd>от 5 000 ₽</dd></div>
+          </dl>
+          <div class="service-card__cta">
+            <a
+              class="service-card__select js-telegram-cta"
+              href="https://t.me/nkt_ptv"
+              data-message="Здравствуйте, Никита! Хочу заказать: Telegram-бота"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Выбрать: Telegram-бот, написать в Telegram"
+            >Выбрать</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3>Telegram Mini App</h3>
+          <p>Полноценный интерфейс каталога, корзины или записи внутри
+            Telegram, без установки приложения.</p>
+          <dl class="service-card__facts">
+            <div><dt>Срок</dt><dd>5-7 дней</dd></div>
+            <div><dt>Цена</dt><dd>от 15 000 ₽</dd></div>
+          </dl>
+          <div class="service-card__cta">
+            <a
+              class="service-card__select js-telegram-cta"
+              href="https://t.me/nkt_ptv"
+              data-message="Здравствуйте, Никита! Хочу заказать: Telegram Mini App"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Выбрать: Telegram Mini App, написать в Telegram"
+            >Выбрать</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section" aria-labelledby="process-heading">
+      <p class="section-number" aria-hidden="true">03 / Как работаю</p>
+      <h2 id="process-heading">Как работаю</h2>
+
+      <ol class="process-list">
+        <li class="process-step">
+          <span class="process-step__index" aria-hidden="true">01</span>
+          <h3>Обсуждение</h3>
+          <p>Рассказываете, что нужно, я задаю уточняющие вопросы, и мы
+            договариваемся о задаче и сроках.</p>
+          <p class="process-step__meta">Срок: 1 день</p>
+        </li>
+        <li class="process-step">
+          <span class="process-step__index" aria-hidden="true">02</span>
+          <h3>Макет</h3>
+          <p>Показываю, как будет выглядеть результат, до начала разработки.
+            Первый макет — бесплатно.</p>
+          <p class="process-step__meta">Срок: 1 день, бесплатно</p>
+        </li>
+        <li class="process-step">
+          <span class="process-step__index" aria-hidden="true">03</span>
+          <h3>Разработка</h3>
+          <p>Собираю рабочую версию сайта, бота или Mini App по
+            согласованному макету.</p>
+          <p class="process-step__meta">Срок: 2-5 дней</p>
+        </li>
+        <li class="process-step">
+          <span class="process-step__index" aria-hidden="true">04</span>
+          <h3>Запуск и правки</h3>
+          <p>Запускаю проект и вношу правки по итогам первого запуска.</p>
+          <p class="process-step__meta">2 бесплатные правки после запуска</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <p class="section-number" aria-hidden="true">04 / Обо мне</p>
+      <h2 id="about-heading">Обо мне</h2>
+
+      <div class="about-grid">
+        <div class="about-photo" aria-hidden="true">
+          <span class="about-photo__mark">Н</span>
+        </div>
+        <div class="about-text">
+          <p>
+            Мне 18 лет, живу в Екатеринбурге. Делаю сайты, Telegram-ботов и
+            Mini App: на фронтенде — HTML/CSS/JS и Three.js, бэкенд ботов —
+            Python (aiogram).
+          </p>
+          <p>
+            Мне важнее довести проект до рабочего состояния, чем до красивого
+            макета, который некому поддерживать.
+          </p>
+          <p class="about-text__note">
+            [ЗАПОЛНИТЬ: фото Никиты — пока вместо него монограмма]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section" aria-labelledby="contacts-heading">
+      <p class="section-number" aria-hidden="true">05 / Контакты</p>
+      <h2 id="contacts-heading">Контакты</h2>
+
+      <ul class="contact-list">
+        <li>
+          <a
+            class="button button--telegram js-telegram-cta"
+            href="https://t.me/nkt_ptv"
+            data-message="Здравствуйте, Никита! Хочу обсудить проект"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg class="contact-list__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 4 3 11l6 2 2 6 3-4 5 3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 13l9-7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            Написать в Telegram
+          </a>
+        </li>
+        <li>
+          <a
+            class="button button--secondary"
+            href="https://max.ru/u/f9LHodD0cOKA0Cs35rlldL-TaPL7G7kwwVheM39CTGdGCqtrY4F3NoeKjZA"
+            target="_blank"
+            rel="noopener"
+            aria-label="Написать в MAX"
+          >
+            <svg class="contact-list__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4a8 8 0 0 0-8 8 7.8 7.8 0 0 0 1.8 5L5 20l3.3-1.5A8 8 0 1 0 12 4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            MAX
+          </a>
+        </li>
+        <li>
+          <a
+            class="button button--secondary"
+            href="tel:+79126527423"
+            aria-label="Позвонить по номеру +7 912 652-74-23"
+          >
+            <svg class="contact-list__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.1c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.8.9.6 0 1 .4 1 1v3.3c0 .6-.4 1-1 1C10.6 21.3 2.7 13.4 2.7 3.9c0-.6.4-1 1-1H7c.6 0 1 .4 1 1 .1 1.3.4 2.6.9 3.8.2.3.1.7-.2 1l-2.1 2.1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            +7&nbsp;912&nbsp;652&#8209;74&#8209;23
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="footer-year">2026</span> Никита</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
