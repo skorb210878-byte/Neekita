@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-10-10T04:21:50.872Z",
+  "htmlValidate": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0
+  },
+  "playwright": [
+    {
+      "viewport": "mobile",
+      "consoleIssues": [],
+      "requestFailures": [],
+      "hasHorizontalScroll": false,
+      "linksWithoutHref": [],
+      "brokenAnchors": [],
+      "screenshot": "qa\\screens\\mobile.png",
+      "ok": true
+    },
+    {
+      "viewport": "tablet",
+      "consoleIssues": [],
+      "requestFailures": [],
+      "hasHorizontalScroll": false,
+      "linksWithoutHref": [],
+      "brokenAnchors": [],
+      "screenshot": "qa\\screens\\tablet.png",
+      "ok": true
+    },
+    {
+      "viewport": "desktop",
+      "consoleIssues": [],
+      "requestFailures": [],
+      "hasHorizontalScroll": false,
+      "linksWithoutHref": [],
+      "brokenAnchors": [],
+      "screenshot": "qa\\screens\\desktop.png",
+      "ok": true
+    }
+  ],
+  "axe": {
+    "totalViolations": 0,
+    "seriousOrCritical": [],
+    "ok": true
+  },
+  "lighthouse": {
+    "ok": true,
+    "ranSuccessfully": true,
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "thresholds": {
+      "performance": 90,
+      "accessibility": 95,
+      "best-practices": 95,
+      "seo": 95
+    }
+  }
+}
